@@ -2701,7 +2701,7 @@ La Comisión supervisa exclusivamente la prestación de servicios de administrac
                         <font size="8"/>
                         <paragraph leftIndent="2"/>
                     </textElement>
-                    <text><![CDATA[Fecha Liquidación]]></text>
+                    <text><![CDATA[Fecha liquidación]]></text>
                 </staticText>
             </jr:columnHeader>
             <jr:detailCell style="Table_TD" height="30">
