@@ -2748,7 +2748,7 @@ La Comisión supervisa exclusivamente la prestación de servicios de administrac
         </jr:column>
         
         <!-- Columna 4: Descripción (ancho reducido de 53 a 48) -->
-        <jr:column width="53" uuid="2e2ebb9c-0858-4d62-94ee-d174bc63a4ca">
+        <jr:column width="50" uuid="2e2ebb9c-0858-4d62-94ee-d174bc63a4ca">
             <property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
             <jr:columnHeader style="Table_CH" height="30" rowSpan="1">
                 <staticText>
@@ -2883,7 +2883,7 @@ La Comisión supervisa exclusivamente la prestación de servicios de administrac
         </jr:column>
         
         <!-- Columna 9: Tasa rendimiento (ancho reducido de 54 a 50) -->
-        <jr:column width="54" uuid="f77b3237-b162-4d30-bf38-7dddcf136ad4">
+        <jr:column width="52" uuid="f77b3237-b162-4d30-bf38-7dddcf136ad4">
             <property name="com.jaspersoft.studio.components.table.model.column.name" value="Column8"/>
             <jr:columnHeader style="Table_CH" height="30" rowSpan="1">
                 <staticText>
@@ -2910,7 +2910,7 @@ La Comisión supervisa exclusivamente la prestación de servicios de administrac
         </jr:column>
         
         <!-- Columna 10: Premio (ancho reducido de 54 a 50) -->
-        <jr:column width="48" uuid="4e7eeeaa-e780-44b3-b440-dd66a02c3238">
+        <jr:column width="50" uuid="4e7eeeaa-e780-44b3-b440-dd66a02c3238">
             <property name="com.jaspersoft.studio.components.table.model.column.name" value="Column9"/>
             <jr:columnHeader style="Table_CH" height="30" rowSpan="1">
                 <staticText>
