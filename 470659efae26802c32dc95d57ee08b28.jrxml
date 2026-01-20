@@ -182,15 +182,18 @@
 		<queryString language="JSON">
 			<![CDATA[data.report]]>
 		</queryString>
-		<field name="fecha" class="java.lang.String">
-			<property name="net.sf.jasperreports.json.field.expression" value="fecha"/>
-			<fieldDescription><![CDATA[fecha]]></fieldDescription>
-		</field>
-		   <!-- NUEVO CAMPO AGREGADO -->
+
+			   <!-- NUEVO CAMPO AGREGADO -->
 		<field name="fechaOperacion" class="java.lang.String">
 			<property name="net.sf.jasperreports.json.field.expression" value="fechaOperacion"/>
 			<fieldDescription><![CDATA[fechaOperacion]]></fieldDescription>
 		</field>
+
+		<field name="fecha" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="fecha"/>
+			<fieldDescription><![CDATA[fecha]]></fieldDescription>
+		</field>
+	
 
 		<field name="contrato" class="java.lang.String">
 			<property name="net.sf.jasperreports.json.field.expression" value="contrato"/>
@@ -250,14 +253,17 @@
 		<queryString language="JSON">
 			<![CDATA[data.unliquidated]]>
 		</queryString>
+
+		<field name="fechaOperacion" class="java.lang.String">
+        <property name="net.sf.jasperreports.json.field.expression" value="fechaOperacion"/>
+        <fieldDescription><![CDATA[fechaOperacion]]></fieldDescription>
+    	</field>
+
 		<field name="fecha" class="java.lang.String">
 			<property name="net.sf.jasperreports.json.field.expression" value="fecha"/>
 			<fieldDescription><![CDATA[fecha]]></fieldDescription>
 		</field>
-		    <field name="fechaOperacion" class="java.lang.String">
-        <property name="net.sf.jasperreports.json.field.expression" value="fechaOperacion"/>
-        <fieldDescription><![CDATA[fechaOperacion]]></fieldDescription>
-    </field>
+		  
 		<field name="contrato" class="java.lang.String">
 			<property name="net.sf.jasperreports.json.field.expression" value="contrato"/>
 			<fieldDescription><![CDATA[contrato]]></fieldDescription>
@@ -2657,36 +2663,8 @@ La Comisión supervisa exclusivamente la prestación de servicios de administrac
         <datasetRun subDataset="Reports" uuid="5913eeac-1fbb-4e05-85d4-d4e546fcaa6a">
             <dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("data.report")]]></dataSourceExpression>
         </datasetRun>
-        <!-- Columna 1: Fecha (ancho reducido de 54 a 50) -->
-        <jr:column width="50" uuid="d6ecacd7-c998-4f45-9eb8-afa0a23e375b">
-            <property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
-            <jr:columnHeader style="Table_CH" height="30" rowSpan="1">
-                <staticText>
-                    <reportElement x="0" y="0" width="50" height="30" forecolor="#FFFFFF" uuid="f04fb3dc-2633-4681-97f5-d5d1a381efed">
-                        <property name="com.jaspersoft.studio.unit.leftIndent" value="mm"/>
-                    </reportElement>
-                    <textElement verticalAlignment="Middle">
-                        <font size="8"/>
-                        <paragraph leftIndent="2"/>
-                    </textElement>
-                    <text><![CDATA[Fecha]]></text>
-                </staticText>
-            </jr:columnHeader>
-            <jr:detailCell style="Table_TD" height="30">
-                <textField>
-                    <reportElement x="0" y="0" width="50" height="30" uuid="c0979a5c-350a-4e8d-8168-35babcaf19c6">
-                        <property name="com.jaspersoft.studio.unit.leftIndent" value="mm"/>
-                    </reportElement>
-                    <textElement verticalAlignment="Middle">
-                        <font size="7"/>
-                        <paragraph leftIndent="2"/>
-                    </textElement>
-                    <textFieldExpression><![CDATA[$F{fecha}]]></textFieldExpression>
-                </textField>
-            </jr:detailCell>
-        </jr:column>
-        
-        <!-- NUEVA COLUMNA 2: Fecha operación -->
+
+		  <!-- NUEVA COLUMNA 2: Fecha operación -->
         <jr:column width="50" uuid="a1b2c3d4-e5f6-7890-abcd-ef1234567890">
             <property name="com.jaspersoft.studio.components.table.model.column.name" value="ColumnFechaOperacion"/>
             <jr:columnHeader style="Table_CH" height="30" rowSpan="1">
@@ -2710,6 +2688,37 @@ La Comisión supervisa exclusivamente la prestación de servicios de administrac
                 </textField>
             </jr:detailCell>
         </jr:column>
+
+        <!-- Columna 1: Fecha (ancho reducido de 54 a 50) -->
+        <jr:column width="50" uuid="d6ecacd7-c998-4f45-9eb8-afa0a23e375b">
+            <property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+            <jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+                <staticText>
+                    <reportElement x="0" y="0" width="50" height="30" forecolor="#FFFFFF" uuid="f04fb3dc-2633-4681-97f5-d5d1a381efed">
+                        <property name="com.jaspersoft.studio.unit.leftIndent" value="mm"/>
+                    </reportElement>
+                    <textElement verticalAlignment="Middle">
+                        <font size="8"/>
+                        <paragraph leftIndent="2"/>
+                    </textElement>
+                    <text><![CDATA[Fecha Liquidación]]></text>
+                </staticText>
+            </jr:columnHeader>
+            <jr:detailCell style="Table_TD" height="30">
+                <textField>
+                    <reportElement x="0" y="0" width="50" height="30" uuid="c0979a5c-350a-4e8d-8168-35babcaf19c6">
+                        <property name="com.jaspersoft.studio.unit.leftIndent" value="mm"/>
+                    </reportElement>
+                    <textElement verticalAlignment="Middle">
+                        <font size="7"/>
+                        <paragraph leftIndent="2"/>
+                    </textElement>
+                    <textFieldExpression><![CDATA[$F{fecha}]]></textFieldExpression>
+                </textField>
+            </jr:detailCell>
+        </jr:column>
+        
+    
         
         <!-- Columna 3: Contrato (ancho reducido de 53 a 48) -->
         <jr:column width="48" uuid="6c29dd0f-c4ec-44a8-b417-5f0e0e001399">
