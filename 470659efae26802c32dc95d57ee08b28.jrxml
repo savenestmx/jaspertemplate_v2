@@ -2989,11 +2989,11 @@ La Comisión supervisa exclusivamente la prestación de servicios de administrac
 					</jr:column>
 					
 					<!-- Columna 13: IVA (45px) -->
-					<jr:column width="45" uuid="f5a39900-bad9-46c7-8383-655706f67fd3">
+					<jr:column width="44" uuid="f5a39900-bad9-46c7-8383-655706f67fd3">
 						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column12"/>
 						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
 							<staticText>
-								<reportElement x="0" y="0" width="45" height="30" forecolor="#FFFFFF" uuid="f2bdd85d-e885-492b-ab06-505a88fe97fd"/>
+								<reportElement x="0" y="0" width="44" height="30" forecolor="#FFFFFF" uuid="f2bdd85d-e885-492b-ab06-505a88fe97fd"/>
 								<textElement verticalAlignment="Middle">
 									<font size="8"/>
 									<paragraph leftIndent="2"/>
@@ -3003,7 +3003,7 @@ La Comisión supervisa exclusivamente la prestación de servicios de administrac
 						</jr:columnHeader>
 						<jr:detailCell style="Table_TD" height="30">
 							<textField>
-								<reportElement x="0" y="0" width="45" height="30" uuid="3b114f61-6a23-431d-a96f-9362238c3229">
+								<reportElement x="0" y="0" width="44" height="30" uuid="3b114f61-6a23-431d-a96f-9362238c3229">
 									<property name="com.jaspersoft.studio.unit.leftIndent" value="mm"/>
 								</reportElement>
 								<textElement verticalAlignment="Middle">
