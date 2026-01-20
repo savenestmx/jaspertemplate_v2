@@ -2652,7 +2652,7 @@ La Comisión supervisa exclusivamente la prestación de servicios de administrac
 			</componentElement>
 		</band>
 		<band height="122">
-			<componentElement>
+<componentElement>
     <reportElement style="Table_TH" positionType="Float" x="1" y="20" width="752" height="60" uuid="69319dd9-dc45-419a-93e2-ee42c2aea048">
         <property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
         <property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
@@ -2664,7 +2664,8 @@ La Comisión supervisa exclusivamente la prestación de servicios de administrac
             <dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("data.report")]]></dataSourceExpression>
         </datasetRun>
 
-		  <!-- NUEVA COLUMNA 2: Fecha operación -->
+
+		 <!-- NUEVA COLUMNA 2: Fecha operación (50px) -->
         <jr:column width="50" uuid="a1b2c3d4-e5f6-7890-abcd-ef1234567890">
             <property name="com.jaspersoft.studio.components.table.model.column.name" value="ColumnFechaOperacion"/>
             <jr:columnHeader style="Table_CH" height="30" rowSpan="1">
@@ -2688,8 +2689,8 @@ La Comisión supervisa exclusivamente la prestación de servicios de administrac
                 </textField>
             </jr:detailCell>
         </jr:column>
-
-        <!-- Columna 1: Fecha (ancho reducido de 54 a 50) -->
+		
+        <!-- Columna 1: Fecha liquidación (50px) -->
         <jr:column width="50" uuid="d6ecacd7-c998-4f45-9eb8-afa0a23e375b">
             <property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
             <jr:columnHeader style="Table_CH" height="30" rowSpan="1">
@@ -2718,9 +2719,9 @@ La Comisión supervisa exclusivamente la prestación de servicios de administrac
             </jr:detailCell>
         </jr:column>
         
-    
+       
         
-        <!-- Columna 3: Contrato (ancho reducido de 53 a 48) -->
+        <!-- Columna 3: Contrato (48px) -->
         <jr:column width="48" uuid="6c29dd0f-c4ec-44a8-b417-5f0e0e001399">
             <property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
             <jr:columnHeader style="Table_CH" height="30" rowSpan="1">
@@ -2747,12 +2748,12 @@ La Comisión supervisa exclusivamente la prestación de servicios de administrac
             </jr:detailCell>
         </jr:column>
         
-        <!-- Columna 4: Descripción (ancho reducido de 53 a 48) -->
-        <jr:column width="50" uuid="2e2ebb9c-0858-4d62-94ee-d174bc63a4ca">
+        <!-- Columna 4: Descripción (55px - MÁS ANCHA) -->
+        <jr:column width="55" uuid="2e2ebb9c-0858-4d62-94ee-d174bc63a4ca">
             <property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
             <jr:columnHeader style="Table_CH" height="30" rowSpan="1">
                 <staticText>
-                    <reportElement x="0" y="0" width="48" height="30" forecolor="#FFFFFF" uuid="d95c588c-c7d9-4bb7-939d-31e58c392613"/>
+                    <reportElement x="0" y="0" width="55" height="30" forecolor="#FFFFFF" uuid="d95c588c-c7d9-4bb7-939d-31e58c392613"/>
                     <textElement verticalAlignment="Middle">
                         <font size="8"/>
                         <paragraph leftIndent="2"/>
@@ -2762,7 +2763,7 @@ La Comisión supervisa exclusivamente la prestación de servicios de administrac
             </jr:columnHeader>
             <jr:detailCell style="Table_TD" height="30">
                 <textField>
-                    <reportElement x="0" y="0" width="48" height="30" uuid="496b5aa9-74b0-41c8-bf85-e67214fcdc41">
+                    <reportElement x="0" y="0" width="55" height="30" uuid="496b5aa9-74b0-41c8-bf85-e67214fcdc41">
                         <property name="com.jaspersoft.studio.unit.leftIndent" value="mm"/>
                     </reportElement>
                     <textElement verticalAlignment="Middle">
@@ -2774,7 +2775,7 @@ La Comisión supervisa exclusivamente la prestación de servicios de administrac
             </jr:detailCell>
         </jr:column>
         
-        <!-- Columna 5: Emisora (ancho reducido de 54 a 48) -->
+        <!-- Columna 5: Emisora (48px) -->
         <jr:column width="48" uuid="c7b65c7e-3588-4432-af9e-e51518f2f8df">
             <property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
             <jr:columnHeader style="Table_CH" height="30" rowSpan="1">
@@ -2801,7 +2802,7 @@ La Comisión supervisa exclusivamente la prestación de servicios de administrac
             </jr:detailCell>
         </jr:column>
         
-        <!-- Columna 6: Serie (ancho reducido de 53 a 48) -->
+        <!-- Columna 6: Serie (48px) -->
         <jr:column width="48" uuid="1f37e84a-d558-4382-826a-997f03c83cbc">
             <property name="com.jaspersoft.studio.components.table.model.column.name" value="Column5"/>
             <jr:columnHeader style="Table_CH" height="30" rowSpan="1">
@@ -2828,7 +2829,7 @@ La Comisión supervisa exclusivamente la prestación de servicios de administrac
             </jr:detailCell>
         </jr:column>
         
-        <!-- Columna 7: Cantidad (ancho reducido de 53 a 48) -->
+        <!-- Columna 7: Cantidad (48px) -->
         <jr:column width="48" uuid="d290caca-1bc3-4d1a-afe8-7dd7bd08851d">
             <property name="com.jaspersoft.studio.components.table.model.column.name" value="Column6"/>
             <jr:columnHeader style="Table_CH" height="30" rowSpan="1">
@@ -2855,7 +2856,7 @@ La Comisión supervisa exclusivamente la prestación de servicios de administrac
             </jr:detailCell>
         </jr:column>
         
-        <!-- Columna 8: Precio (ancho reducido de 53 a 48) -->
+        <!-- Columna 8: Precio (48px) -->
         <jr:column width="48" uuid="6f6ab7c1-9e08-4817-80c0-7a1992bd881d">
             <property name="com.jaspersoft.studio.components.table.model.column.name" value="Column7"/>
             <jr:columnHeader style="Table_CH" height="30" rowSpan="1">
@@ -2882,12 +2883,12 @@ La Comisión supervisa exclusivamente la prestación de servicios de administrac
             </jr:detailCell>
         </jr:column>
         
-        <!-- Columna 9: Tasa rendimiento (ancho reducido de 54 a 50) -->
-        <jr:column width="52" uuid="f77b3237-b162-4d30-bf38-7dddcf136ad4">
+        <!-- Columna 9: Tasa rendimiento (55px - MÁS ANCHA) -->
+        <jr:column width="55" uuid="f77b3237-b162-4d30-bf38-7dddcf136ad4">
             <property name="com.jaspersoft.studio.components.table.model.column.name" value="Column8"/>
             <jr:columnHeader style="Table_CH" height="30" rowSpan="1">
                 <staticText>
-                    <reportElement x="0" y="0" width="50" height="30" forecolor="#FFFFFF" uuid="e9fa819e-2b47-4013-8fba-9ef2fa2c0846"/>
+                    <reportElement x="0" y="0" width="55" height="30" forecolor="#FFFFFF" uuid="e9fa819e-2b47-4013-8fba-9ef2fa2c0846"/>
                     <textElement verticalAlignment="Middle">
                         <font size="8"/>
                         <paragraph leftIndent="2"/>
@@ -2897,7 +2898,7 @@ La Comisión supervisa exclusivamente la prestación de servicios de administrac
             </jr:columnHeader>
             <jr:detailCell style="Table_TD" height="30">
                 <textField>
-                    <reportElement x="0" y="0" width="50" height="30" uuid="67f5881e-5f1a-46cc-8c79-5a27c9bb11d8">
+                    <reportElement x="0" y="0" width="55" height="30" uuid="67f5881e-5f1a-46cc-8c79-5a27c9bb11d8">
                         <property name="com.jaspersoft.studio.unit.leftIndent" value="mm"/>
                     </reportElement>
                     <textElement verticalAlignment="Middle">
@@ -2909,12 +2910,12 @@ La Comisión supervisa exclusivamente la prestación de servicios de administrac
             </jr:detailCell>
         </jr:column>
         
-        <!-- Columna 10: Premio (ancho reducido de 54 a 50) -->
-        <jr:column width="50" uuid="4e7eeeaa-e780-44b3-b440-dd66a02c3238">
+        <!-- Columna 10: Premio (45px - REDUCIDA para compensar) -->
+        <jr:column width="45" uuid="4e7eeeaa-e780-44b3-b440-dd66a02c3238">
             <property name="com.jaspersoft.studio.components.table.model.column.name" value="Column9"/>
             <jr:columnHeader style="Table_CH" height="30" rowSpan="1">
                 <staticText>
-                    <reportElement x="0" y="0" width="50" height="30" forecolor="#FFFFFF" uuid="56dcd6fb-0c94-4671-8c12-d4ec500754f1"/>
+                    <reportElement x="0" y="0" width="45" height="30" forecolor="#FFFFFF" uuid="56dcd6fb-0c94-4671-8c12-d4ec500754f1"/>
                     <textElement verticalAlignment="Middle">
                         <font size="8"/>
                         <paragraph leftIndent="2"/>
@@ -2924,7 +2925,7 @@ La Comisión supervisa exclusivamente la prestación de servicios de administrac
             </jr:columnHeader>
             <jr:detailCell style="Table_TD" height="30">
                 <textField>
-                    <reportElement x="0" y="0" width="50" height="30" uuid="32c55bcf-96a2-4634-a11c-ee2366abbda9">
+                    <reportElement x="0" y="0" width="45" height="30" uuid="32c55bcf-96a2-4634-a11c-ee2366abbda9">
                         <property name="com.jaspersoft.studio.unit.leftIndent" value="mm"/>
                     </reportElement>
                     <textElement verticalAlignment="Middle">
@@ -2936,12 +2937,12 @@ La Comisión supervisa exclusivamente la prestación de servicios de administrac
             </jr:detailCell>
         </jr:column>
         
-        <!-- Columna 11: Intereses (ancho reducido de 53 a 49) -->
-        <jr:column width="49" uuid="3672ab4c-d39e-4f48-a15f-6ea0040df75f">
+        <!-- Columna 11: Intereses (45px - REDUCIDA) -->
+        <jr:column width="45" uuid="3672ab4c-d39e-4f48-a15f-6ea0040df75f">
             <property name="com.jaspersoft.studio.components.table.model.column.name" value="Column10"/>
             <jr:columnHeader style="Table_CH" height="30" rowSpan="1">
                 <staticText>
-                    <reportElement x="0" y="0" width="49" height="30" forecolor="#FFFFFF" uuid="0dcb0210-d45b-46aa-8858-ac330c1e4115"/>
+                    <reportElement x="0" y="0" width="45" height="30" forecolor="#FFFFFF" uuid="0dcb0210-d45b-46aa-8858-ac330c1e4115"/>
                     <textElement verticalAlignment="Middle">
                         <font size="8"/>
                         <paragraph leftIndent="2"/>
@@ -2951,7 +2952,7 @@ La Comisión supervisa exclusivamente la prestación de servicios de administrac
             </jr:columnHeader>
             <jr:detailCell style="Table_TD" height="30">
                 <textField>
-                    <reportElement x="0" y="0" width="49" height="30" uuid="e84dbca4-c320-4994-8f6f-65ea09294654">
+                    <reportElement x="0" y="0" width="45" height="30" uuid="e84dbca4-c320-4994-8f6f-65ea09294654">
                         <property name="com.jaspersoft.studio.unit.leftIndent" value="mm"/>
                     </reportElement>
                     <textElement verticalAlignment="Middle">
@@ -2963,12 +2964,12 @@ La Comisión supervisa exclusivamente la prestación de servicios de administrac
             </jr:detailCell>
         </jr:column>
         
-        <!-- Columna 12: Impuestos (ancho reducido de 54 a 50) -->
-        <jr:column width="50" uuid="260fc618-c810-41ba-b625-8f600942184c">
+        <!-- Columna 12: Impuestos (45px - REDUCIDA) -->
+        <jr:column width="45" uuid="260fc618-c810-41ba-b625-8f600942184c">
             <property name="com.jaspersoft.studio.components.table.model.column.name" value="Column11"/>
             <jr:columnHeader style="Table_CH" height="30" rowSpan="1">
                 <staticText>
-                    <reportElement x="0" y="0" width="50" height="30" forecolor="#FFFFFF" uuid="2b1344cb-7f69-48e0-9912-062764bf3e58"/>
+                    <reportElement x="0" y="0" width="45" height="30" forecolor="#FFFFFF" uuid="2b1344cb-7f69-48e0-9912-062764bf3e58"/>
                     <textElement verticalAlignment="Middle">
                         <font size="8"/>
                         <paragraph leftIndent="2"/>
@@ -2978,7 +2979,7 @@ La Comisión supervisa exclusivamente la prestación de servicios de administrac
             </jr:columnHeader>
             <jr:detailCell style="Table_TD" height="30">
                 <textField>
-                    <reportElement x="0" y="0" width="50" height="30" uuid="3b0c64cf-6c2d-4544-99bd-d00ea62bfa21">
+                    <reportElement x="0" y="0" width="45" height="30" uuid="3b0c64cf-6c2d-4544-99bd-d00ea62bfa21">
                         <property name="com.jaspersoft.studio.unit.leftIndent" value="mm"/>
                     </reportElement>
                     <textElement verticalAlignment="Middle">
@@ -2990,12 +2991,12 @@ La Comisión supervisa exclusivamente la prestación de servicios de administrac
             </jr:detailCell>
         </jr:column>
         
-        <!-- Columna 13: IVA (ancho reducido de 54 a 50) -->
-        <jr:column width="50" uuid="f5a39900-bad9-46c7-8383-655706f67fd3">
+        <!-- Columna 13: IVA (45px - REDUCIDA) -->
+        <jr:column width="45" uuid="f5a39900-bad9-46c7-8383-655706f67fd3">
             <property name="com.jaspersoft.studio.components.table.model.column.name" value="Column12"/>
             <jr:columnHeader style="Table_CH" height="30" rowSpan="1">
                 <staticText>
-                    <reportElement x="0" y="0" width="50" height="30" forecolor="#FFFFFF" uuid="f2bdd85d-e885-492b-ab06-505a88fe97fd"/>
+                    <reportElement x="0" y="0" width="45" height="30" forecolor="#FFFFFF" uuid="f2bdd85d-e885-492b-ab06-505a88fe97fd"/>
                     <textElement verticalAlignment="Middle">
                         <font size="8"/>
                         <paragraph leftIndent="2"/>
@@ -3005,7 +3006,7 @@ La Comisión supervisa exclusivamente la prestación de servicios de administrac
             </jr:columnHeader>
             <jr:detailCell style="Table_TD" height="30">
                 <textField>
-                    <reportElement x="0" y="0" width="50" height="30" uuid="3b114f61-6a23-431d-a96f-9362238c3229">
+                    <reportElement x="0" y="0" width="45" height="30" uuid="3b114f61-6a23-431d-a96f-9362238c3229">
                         <property name="com.jaspersoft.studio.unit.leftIndent" value="mm"/>
                     </reportElement>
                     <textElement verticalAlignment="Middle">
@@ -3017,12 +3018,12 @@ La Comisión supervisa exclusivamente la prestación de servicios de administrac
             </jr:detailCell>
         </jr:column>
         
-        <!-- Columna 14: Comisión (ancho reducido de 54 a 50) -->
-        <jr:column width="50" uuid="cf1fe018-0435-4393-9718-c546d21bf0b8">
+        <!-- Columna 14: Comisión (45px - REDUCIDA) -->
+        <jr:column width="45" uuid="cf1fe018-0435-4393-9718-c546d21bf0b8">
             <property name="com.jaspersoft.studio.components.table.model.column.name" value="Column13"/>
             <jr:columnHeader style="Table_CH" height="30" rowSpan="1">
                 <staticText>
-                    <reportElement x="0" y="0" width="50" height="30" forecolor="#FFFFFF" uuid="4869a4f4-956b-494b-a03f-fdd2aa3c29b8"/>
+                    <reportElement x="0" y="0" width="45" height="30" forecolor="#FFFFFF" uuid="4869a4f4-956b-494b-a03f-fdd2aa3c29b8"/>
                     <textElement verticalAlignment="Middle">
                         <font size="8"/>
                         <paragraph leftIndent="2"/>
@@ -3032,7 +3033,7 @@ La Comisión supervisa exclusivamente la prestación de servicios de administrac
             </jr:columnHeader>
             <jr:detailCell style="Table_TD" height="30">
                 <textField>
-                    <reportElement x="0" y="0" width="50" height="30" uuid="252d5dcd-34e4-4ea3-aa3a-d6091bc12a8e">
+                    <reportElement x="0" y="0" width="45" height="30" uuid="252d5dcd-34e4-4ea3-aa3a-d6091bc12a8e">
                         <property name="com.jaspersoft.studio.unit.leftIndent" value="mm"/>
                     </reportElement>
                     <textElement verticalAlignment="Middle">
@@ -3044,12 +3045,12 @@ La Comisión supervisa exclusivamente la prestación de servicios de administrac
             </jr:detailCell>
         </jr:column>
         
-        <!-- Columna 15: Neto (ancho reducido de 54 a 50) -->
-        <jr:column width="50" uuid="8f77478c-89ec-4606-921c-a4e4b5b4ae8b">
+        <!-- Columna 15: Neto (48px) -->
+        <jr:column width="48" uuid="8f77478c-89ec-4606-921c-a4e4b5b4ae8b">
             <property name="com.jaspersoft.studio.components.table.model.column.name" value="Column14"/>
             <jr:columnHeader style="Table_CH" height="30" rowSpan="1">
                 <staticText>
-                    <reportElement x="0" y="0" width="50" height="30" forecolor="#FFFFFF" uuid="8304f50c-c1bb-4514-9303-e8b3ae34b74a"/>
+                    <reportElement x="0" y="0" width="48" height="30" forecolor="#FFFFFF" uuid="8304f50c-c1bb-4514-9303-e8b3ae34b74a"/>
                     <textElement verticalAlignment="Middle">
                         <font size="8"/>
                         <paragraph leftIndent="2"/>
@@ -3059,7 +3060,7 @@ La Comisión supervisa exclusivamente la prestación de servicios de administrac
             </jr:columnHeader>
             <jr:detailCell style="Table_TD" height="30">
                 <textField>
-                    <reportElement x="0" y="0" width="50" height="30" uuid="bf32460d-5285-4365-aadb-a103e43fedc3">
+                    <reportElement x="0" y="0" width="48" height="30" uuid="bf32460d-5285-4365-aadb-a103e43fedc3">
                         <property name="com.jaspersoft.studio.unit.leftIndent" value="mm"/>
                     </reportElement>
                     <textElement verticalAlignment="Middle">
